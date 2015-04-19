@@ -36,8 +36,8 @@ class AboutNil < Neo::Koan
 
     # It's better to use obj.nil? than obj == nil.  .nil? is a method of the NilClass; calling
     # obj.nil? checks to see if the obj is part of the NilClass. obj == nil tests for equality;
-    # its test to see if the obj actually IS nil. Calling .object_id on nil and any object, you
-    # can see will always be false as an object cannot BE nil except nil itself.
+    # its test to see if the obj actually IS nil. Generally these will have mostly same observable
+    # effects as both will more than likely return false, however .nil? is more readable.
   end
 
 end
